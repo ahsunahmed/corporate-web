@@ -1,0 +1,59 @@
+.slicknav_menu {
+    display: none;
+}
+.header-area{
+    padding: 25px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    transition: 0.3s;
+    &.sticky {
+        padding: 20px 0;
+        background-color: $white;
+        box-shadow: 0px -30px 40px $black;
+        a {
+            color: $black!important;
+            &:hover{
+                color: $primary-color!important;
+            }
+          }
+      }
+    .header {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        column-gap: 5%;
+        .logo{
+            a{  color: $white;
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: 500;
+            }
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            ul {
+                display: flex;
+                li{
+                    &.current{
+                        a{
+                            color: $primary-color!important;
+                        }
+                    }
+                    a{
+                        color: $white;
+                        font-size: 16px;
+                        text-transform: capitalize;
+                        margin-left: 20px;
+                        transition: 0.3s;
+                        &:hover{
+                            color: $primary-color;;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

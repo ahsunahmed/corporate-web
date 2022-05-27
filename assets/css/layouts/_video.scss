@@ -1,0 +1,21 @@
+/* ============== Video Area CSS ============= */
+.video-area{
+    @include bg;
+    text-align: center;
+    color: $white;
+    a {
+        color: $white;
+        font-size: 50px;
+      }
+    h2 {
+        font-size: 45px;
+        text-transform: uppercase;
+        margin: 20px 0;
+      }
+      p {
+        font-size: 16px;
+        max-width: 710px;
+        margin: 0 auto;
+        line-height: 1.5rem;
+      }
+}

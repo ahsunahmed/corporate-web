@@ -1,0 +1,32 @@
+/* ============== Subscription Area CSS ============= */
+.subscription-area{
+    @include bg;
+    color: $white;
+    .subscription{
+        form {
+            max-width: 700px;
+            margin: 0 auto;
+            position: relative;
+            input {
+                width: 100%;
+                padding: 11px 30px;
+                border-radius: 50px;
+                border: 0;
+                outline: 0;
+                font-size: 16px;
+              }
+            input[type='submit'] {
+                background-color: $primary-color;
+                width: auto;
+                padding: 11px 30px;
+                color: $white;
+                font-weight: 600;
+                font-size: 16px;
+                position: absolute;
+                right: 0;
+                top: 0;
+                cursor: pointer;
+              }
+          }
+    }
+}

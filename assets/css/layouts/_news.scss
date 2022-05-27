@@ -1,0 +1,58 @@
+/* ============== Blog Area CSS ============= */
+.news-area{
+    .news-blogs {
+        display: grid;
+        grid-template-columns: repeat(3,auto);
+        column-gap: 30px;
+        .blog-img {
+            position: relative;
+            margin-bottom: 40px;
+            img {
+                width: 100%;
+              }
+              .blog-meta {
+                position: absolute;
+                background-color: $white;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                padding: 10px 20px;
+                width: 90%;
+                margin: 0 auto;
+                bottom: -19px;
+                left: 50%;
+                transform: translateX(-50%);
+                border: 1px solid #ddd;
+                color: $black;
+                h5 {
+                    font-size: 16px;
+                    i {
+                        font-size: 18px;
+                        margin-right: 5px;
+                      }
+                  }
+              } 
+          }
+        .blog-content{
+            h2 {
+                font-size: 24px;
+                text-transform: capitalize;
+                font-weight: 600;
+                margin-bottom: 10px;
+              }
+            p {
+                font-size: 15px;
+                line-height: 1.5rem;
+              }
+              a {
+                color: $primary-color;
+                display: inline-block;
+                margin-top: 10px;
+                transition: 0.3s;
+                &:hover {
+                    color: red;
+                  }
+              }
+        }
+      }
+}

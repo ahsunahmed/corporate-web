@@ -1,0 +1,39 @@
+/* ============== Process Area CSS ============= */
+.process-area{
+    @include bg;
+    color: $white;
+    .section-title-primary{
+        h2{
+            &:after{
+                background-color: $white;
+            }
+        }
+    }
+    .process {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 20px;
+        .single-process{
+            h4 {
+                background-color: #f28820;
+                padding: 10px;
+                border-radius: 4px;
+                font-size: 20px;
+                text-transform: capitalize;
+                position: relative;
+                span {
+                    background-color: $primary-color;
+                    padding: 9px 20px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border: 1px solid #ff9920;
+                    border-radius: 4px;
+                  }
+              }
+              p {
+                margin-top: 20px;
+              }
+        }
+      }
+}

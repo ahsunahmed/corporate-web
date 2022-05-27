@@ -1,0 +1,23 @@
+/* ============== Footer Area CSS ============= */
+.footer-area{
+    background-color: $black;
+    color: $white;
+    .footer-links{
+        margin-bottom: 30px;
+        a {
+            color: $white;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: 0.3s;
+            &:hover{
+                color: $primary-color;
+            }
+          }
+    }
+    .footer-content{
+        p {
+            font-size: 16px;
+            text-transform: capitalize;
+          }
+    }
+}

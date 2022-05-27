@@ -1,0 +1,109 @@
+/* ============== Feature Area CSS ============= */
+.feature-area{
+    background-color: $offwhite;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url("../../assets/img/feature-1.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        }
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: $black;
+        opacity: 0.8;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 2;
+        }
+    .container {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 10%;
+        .features {
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-gap: 30px;
+            margin-bottom: 20px;
+            .single-feature{
+                i {
+                    font-size: 24px;
+                    color: $black;
+                  }
+                h4{
+                    font-size: 20px;
+                    text-transform: capitalize;
+                    margin: 8px 0;
+                  }
+                p {
+                    font-size: 16px;
+                    line-height: 1.5rem;
+                  }  
+            }
+          }
+    } 
+    }
+.feature-area-bottom{
+    background-color: $offwhite;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url("../../assets/img/feature-2.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        }
+    &::before{
+        content: "";
+        position: absolute;
+        background-color: $black;
+        opacity: 0.8;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        }
+    .container{
+        .features{
+            display: grid;
+            grid-template-columns: 45% 45%;
+            grid-gap: 10%;
+            margin-bottom: 20px;
+            .feature-bottom{
+                .feature-list{
+                    display: grid;
+                    grid-template-columns: auto auto;
+                    margin-bottom: 30px;
+                    ul{
+                        li{
+                            margin-bottom: 10px;
+                            text-transform: capitalize;
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .feature-bottom-btn{
+                    text-align: center;
+                }
+            }
+             
+        }
+    }
+    
+  
+}

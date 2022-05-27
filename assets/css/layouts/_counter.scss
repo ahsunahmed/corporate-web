@@ -1,0 +1,27 @@
+/* ============== Counter Area CSS ============= */
+.counter-area{
+    @include bg;
+    background-image: url('../../assets/img/test_back.jpg');
+    color: $white;
+    .counter {
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        .single-counter{
+            text-align: center;
+            i {
+                font-size: 35px;
+              }
+            h4 {
+                text-transform: capitalize;
+                span {
+                    display: block;
+                    margin: 20px 0;
+                    font-size: 50px;
+                  }
+            }
+        }
+      }
+}
+
+
+
